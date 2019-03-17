@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/src/AssignApp8.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/clock.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/tasklisting.js" />
+        <item url="file://$PROJECT_DIR$/dist/src/todo.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/src/AssignApp8.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/clock.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/tasklisting.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/todo.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
