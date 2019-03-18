@@ -1,24 +1,23 @@
 
 
-import React, { useState } from 'react'
+import React from 'react'
+import Clock from './Clock';
 
+const TaskListing = () => (
+         <table>
+            <thead>
+            <tr>
+                <th>Clock</th>
+                <th><Clock/></th>
 
-
-const TaskListing = () => {
-
-
-    const ToDoListData = [
-            {id: 1, taskToDo: "Pack bags first"},
-            {id: 2, taskToDo: "Have passport and tickets ready"},
-            {id: 3, taskToDo: "Confirm accommodations"},
-            {id: 4, taskToDo: "Confirm flights"},
-    ]
-    const [tasks] = useState(ToDoListData)
-
-    return (
-
-    )
-}
-
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Put temp here</td>
+            </tr>
+            </tbody>
+        </table>
+)
 
 export default TaskListing
