@@ -27,6 +27,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+// Get local time
 var TimeLocale =
 /*#__PURE__*/
 function (_Component) {
@@ -78,6 +79,7 @@ var Clock =
 function (_Component3) {
   _inherits(Clock, _Component3);
 
+  // Designate state as new Date object
   function Clock(props) {
     var _this;
 
@@ -88,7 +90,8 @@ function (_Component3) {
       now: new Date()
     };
     return _this;
-  }
+  } // Count up every second
+
 
   _createClass(Clock, [{
     key: "componentDidMount",
@@ -100,7 +103,8 @@ function (_Component3) {
           now: new Date()
         });
       }, 1000);
-    }
+    } // Return time readout as string
+
   }, {
     key: "render",
     value: function render() {

@@ -1,8 +1,9 @@
-
+// Clock Component
 
 import React, { Component } from 'react';
 
 
+// Get local time
 class TimeLocale extends Component
 {
     render(){
@@ -23,6 +24,7 @@ class ActualTime extends Component {
 }
 
 class Clock extends Component {
+    // Designate state as new Date object
     constructor(props) {
         super(props)
         this.state ={
@@ -30,7 +32,7 @@ class Clock extends Component {
         }
     }
 
-
+    // Count up every second
     componentDidMount() {
         this.timerID = setInterval( ()=> {
             this.setState({ now : new Date() });
@@ -38,6 +40,7 @@ class Clock extends Component {
     }
 
 
+    // Return time readout as string
     render() {
         return (
             <ActualTime date={this.state.now}/>

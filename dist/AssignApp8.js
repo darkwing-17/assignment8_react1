@@ -11,7 +11,9 @@ require("./reset.css");
 
 require("./text.css");
 
-var _tasklisting = _interopRequireDefault(require("./tasklisting"));
+var _Clock = _interopRequireDefault(require("./Clock"));
+
+var _TaskListing = _interopRequireDefault(require("./TaskListing"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55,7 +57,7 @@ function (_Component) {
         className: "AssignApp8"
       }, _react.default.createElement("header", {
         className: "App-header"
-      }, _react.default.createElement(_tasklisting.default, null)));
+      }, _react.default.createElement("table", null, _react.default.createElement("thead", null, _react.default.createElement("tr", null, _react.default.createElement("th", null, "Clock"), _react.default.createElement("th", null, _react.default.createElement(_Clock.default, null)))))), _react.default.createElement(_TaskListing.default, null));
     }
   }]);
 

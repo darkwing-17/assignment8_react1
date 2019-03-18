@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './reset.css';
 import './text.css';
 import Clock from './Clock';
-import TaskListing from './tasklisting';
-
+import TaskListing from './TaskListing';
 // Assignment 8 - React app
 // Ed Chu
 
@@ -27,6 +26,7 @@ class AssignApp8 extends Component {
                 </thead>
             </table>
         </header>
+            <TaskListing />
        </div>
     );
   }
