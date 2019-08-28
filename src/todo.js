@@ -11,7 +11,7 @@ class Todo extends Component
     render() {
         return(
             <div className = "todo">
-            <div className="header">
+            <div className = "header">
                 <form onSubmit={this.props.addItem}>
                     <input
                         placeholder="Task"

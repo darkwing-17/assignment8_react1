@@ -1,0 +1,45 @@
+
+[4m/Users/MallardRider/Library/Mobile Documents/com~apple~CloudDocs/GitHub/assignment8_react1/src/AddTaskForm.js[24m
+   [2m3:21[22m  [33mwarning[39m  Expected parentheses around arrow function argument  [2marrow-parens[22m
+   [2m6:5[22m   [33mwarning[39m  Unexpected var, use let or const instead             [2mno-var[22m
+   [2m7:5[22m   [33mwarning[39m  Unexpected var, use let or const instead             [2mno-var[22m
+   [2m8:5[22m   [33mwarning[39m  Unexpected var, use let or const instead             [2mno-var[22m
+   [2m9:5[22m   [33mwarning[39m  Unexpected var, use let or const instead             [2mno-var[22m
+   [2m9:29[22m  [33mwarning[39m  Expected parentheses around arrow function argument  [2marrow-parens[22m
+  [2m16:25[22m  [33mwarning[39m  Expected parentheses around arrow function argument  [2marrow-parens[22m
+  [2m29:5[22m   [33mwarning[39m  Unreachable code                                     [2mno-unreachable[22m
+
+[33m[1m✖ 8 problems (0 errors, 8 warnings)[22m[39m
+[33m[1m[22m[39m[33m[1m  0 errors and 7 warnings potentially fixable with the `--fix` option.[22m[39m
+[33m[1m[22m[39m
+
+Output from running this tool on commandline:
+eslint -c .eslintrc src/AddTaskForm.js  -o fixlist.txt
+
+
+.eslintrc:
+
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "no-extra-semi": [ 1 ],
+    "no-unreachable": [ 1 ],
+    "no-const-assign": [ 1 ],
+    "no-var": [ 1 ],
+    "max-lines-per-function": ["warn", {"max": 25}],
+    "arrow-parens": [ 1 ],
+    "arrow-body-style": ["error", "always"]
+  }
+}
+
+"Expected parentheses around arrow function argument": This is a code style where arguments for the arrow function should be enclosed in ().
+
+"Unexpected var, use let or const instead": Code style in ES6, where only let or const are to be used in place of var
+
+"Unreachable code": There was a function left behind during editing. The fixed file no longer has this function. It was left behind as an error.
+
+"arrow function has too many lines (25). Maximum allowed is 25 max-lines-per-function"
+This was a "fake warning". Most of the JS files have lines well above 25.
